@@ -510,7 +510,7 @@ function obj:init()
     logger.w("Setting up watcher for audio device ".. device:name())
   end
   if self.mb == nil then
-    self.mb = hs.menubar.new()
+    self.mb = hs.menubar.new(true, "mic-status")
   end
   -- if self.mbs == nil then
   --   self.mbs = hs.menubar.new()
